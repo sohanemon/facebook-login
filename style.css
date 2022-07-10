@@ -13,8 +13,8 @@ body {
 }
 main {
   display: flex;
-  width: 72%;
-
+  width: 100%;
+  padding-top: 2%;
   margin: auto;
   height: 100vh;
 }
@@ -22,7 +22,12 @@ main > * {
   width: 50%;
 }
 aside {
-  margin: auto;
+  margin: 12% 0 0 15%;
+  padding-right: 50px;
+}
+aside h1 {
+  font-size: 28px;
+  font-weight: 400;
 }
 aside img {
   width: 300px;
@@ -32,13 +37,13 @@ section div {
   background-color: white;
   display: flex;
   flex-direction: column;
-  padding: 25px;
+  padding: 20px;
   gap: 12px;
   border-radius: 10px;
-  box-shadow: 0px 0px 15px var(--input-bg);
+  box-shadow: 0px 0px 15px rgb(206, 203, 203);
 }
 section {
-  padding: 20px;
+  padding-right: 150px;
   margin: auto;
 }
 section input {
@@ -61,31 +66,40 @@ section > * {
   border-radius: 5px;
   font-size: 20px;
   color: white;
+  font-weight: 500;
 }
 #signup {
   background: var(--secondary-color);
   border: none;
-  padding: 10px;
+  padding: 12px;
   cursor: pointer;
   margin: 4px 0;
   border-radius: 5px;
   font-size: 20px;
   margin: 4px auto;
+  font-weight: 500;
   width: max-content;
   color: white;
 }
 section > div > a {
   font-size: 14px;
-  text-align: center;
+  margin: auto;
   text-decoration: none;
+  width: max-content;
 }
 section > div > a:hover {
   text-decoration: underline;
 }
-
+hr {
+  margin: 14px 0;
+  border: none;
+  height: 1px;
+  background-color: var(--input-bg);
+}
 section > p {
   text-align: center;
   margin: 27px;
+  font-size: 14px;
 }
 section > p > a {
   text-decoration: none;
