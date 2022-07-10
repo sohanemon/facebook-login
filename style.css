@@ -46,6 +46,9 @@ section input {
   border: 1px solid var(--input-bg);
   border-radius: 5px;
 }
+section input:focus::placeholder {
+  opacity: 0.5;
+}
 section > * {
   width: 80%;
 }
@@ -54,6 +57,7 @@ section > * {
   border: none;
   padding: 10px;
   margin: 4px 0;
+  cursor: pointer;
   border-radius: 5px;
   font-size: 20px;
   color: white;
@@ -62,6 +66,7 @@ section > * {
   background: var(--secondary-color);
   border: none;
   padding: 10px;
+  cursor: pointer;
   margin: 4px 0;
   border-radius: 5px;
   font-size: 20px;
@@ -72,8 +77,20 @@ section > * {
 section > div > a {
   font-size: 14px;
   text-align: center;
+  text-decoration: none;
+}
+section > div > a:hover {
+  text-decoration: underline;
+}
+
+section > p {
+  text-align: center;
+  margin: 27px;
 }
 section > p > a {
   text-decoration: none;
   color: black;
+}
+section > p > a:hover {
+  text-decoration: underline;
 }
