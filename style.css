@@ -1,0 +1,79 @@
+:root {
+  --primary-color: #1877f2;
+  --secondary-color: #42b72a;
+  --input-bg: #dddfe2;
+  --root-bg: #f0f2f5;
+}
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: var(--root-bg);
+}
+main {
+  display: flex;
+  width: 72%;
+
+  margin: auto;
+  height: 100vh;
+}
+main > * {
+  width: 50%;
+}
+aside {
+  margin: auto;
+}
+aside img {
+  width: 300px;
+  margin-left: -30px;
+}
+section div {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  gap: 12px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px var(--input-bg);
+}
+section {
+  padding: 20px;
+  margin: auto;
+}
+section input {
+  padding: 15px;
+  border: 1px solid var(--input-bg);
+  border-radius: 5px;
+}
+section > * {
+  width: 80%;
+}
+#login {
+  background: var(--primary-color);
+  border: none;
+  padding: 10px;
+  margin: 4px 0;
+  border-radius: 5px;
+  font-size: 20px;
+  color: white;
+}
+#signup {
+  background: var(--secondary-color);
+  border: none;
+  padding: 10px;
+  margin: 4px 0;
+  border-radius: 5px;
+  font-size: 20px;
+  margin: 4px auto;
+  width: max-content;
+  color: white;
+}
+section > div > a {
+  font-size: 14px;
+  text-align: center;
+}
+section > p > a {
+  text-decoration: none;
+  color: black;
+}
